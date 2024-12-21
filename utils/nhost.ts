@@ -15,6 +15,7 @@ const FETCH_PRODUCTS = gql`
       price
       benefits
       img
+   description
       category
       subcategory
     }
