@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
+import Router from 'next/navigation'
 import {
   Store,
   Info,
@@ -19,7 +20,11 @@ import { signOut } from 'next-auth/react';
 import { Button } from './ui/button';
 
 
-
+const dnzxLogout = () => {
+  const router = Router()
+  signOut()
+  router.push('./')
+}
 
 const navItems = [
   {
@@ -83,7 +88,7 @@ export function DashboardNav() {
         <Button
           variant="outline"
           className="w-full justify-start relative -top-44 space-x-2"
-          onClick={() => signOut()}
+          onClick={() => dnzxLogout()}
         >
           <LogOut className="h-5 w-5 " />
           <span>Sair</span>
