@@ -16,8 +16,11 @@ import {
   DropdownMenuItem,
 } from '@/components/ui/dropdown-menu';
 
-
-
+const dnzxLogout = () => {
+  const router = Router()
+  signOut()
+  router.push('./')
+}
 
 
 export default function Home() {
@@ -70,7 +73,7 @@ export default function Home() {
                       Painel
                     </DropdownMenuItem>
                     <DropdownMenuItem
-                      
+                        onClick={() => dnzxLogout()}
                       className="hover:bg-yellow-500 hover:text-black cursor-pointer"
                     >
                       Logout
