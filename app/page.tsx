@@ -42,13 +42,7 @@ export default function Home() {
                     alt="Logo"
                   />
             </div>
-            <div className="hidden md:flex items-center space-x-6">
-              <Link href="#" className="hover:text-yellow-500 transition">Home</Link>
-              <Link href="#" className="hover:text-yellow-500 transition">VIP</Link>
-              <Link href="#" className="hover:text-yellow-500 transition">Notícias</Link>
-              <Link href="#" className="hover:text-yellow-500 transition">Como Jogar</Link>
-              <Link href="#" className="hover:text-yellow-500 transition">Contato</Link>
-            </div>
+
             <div className="flex items-center space-x-4">
              
              
