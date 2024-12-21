@@ -35,7 +35,8 @@ interface StoreItem {
   benefits: string[];
   category: string;
   subcategory?: string;
-  img: string; // Adicionando a propriedade 'img'
+  img: string; 
+  description: string;
 }
 
 export default function StorePage() {
@@ -172,6 +173,8 @@ export default function StorePage() {
                     <Diamond className="text-yellow-500" size={20} />
                     <span>{item.price}</span>
                   </p>
+                  <p className="text-sm text-gray-600">{item.description}</p>
+
                   <ul className="space-y-2">
                     {/* Descomentar quando os benefícios estiverem prontos */}
                     {/* {item.benefits.map((benefit) => (
