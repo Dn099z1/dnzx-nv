@@ -16,18 +16,16 @@ import {
   DropdownMenuItem,
 } from '@/components/ui/dropdown-menu';
 
-const dnzxLogout = () => {
-  const router = Router()
-  signOut()
-  router.push('./')
-}
 
 
 export default function Home() {
   const { data: session } = useSession();
-  const router = useRouter();
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
+  const router = useRouter()
+  const LogoutMax = () => {
+    signOut()
+    router.push('./')
+  }
   
   return (
     <div className="min-h-screen bg-[#0a0b0f] text-white">
@@ -73,7 +71,7 @@ export default function Home() {
                       Painel
                     </DropdownMenuItem>
                     <DropdownMenuItem
-                        onClick={() => dnzxLogout()}
+                        onClick={LogoutMax}
                       className="hover:bg-yellow-500 hover:text-black cursor-pointer"
                     >
                       Logout
