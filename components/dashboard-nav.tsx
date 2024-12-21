@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import Router from 'next/navigation'
+import Router from 'next/router';
 import {
   Store,
   Info,
@@ -20,11 +20,7 @@ import { signOut } from 'next-auth/react';
 import { Button } from './ui/button';
 
 
-const dnzxLogout = () => {
-  const router = Router()
-  signOut()
-  router.push('./')
-}
+
 
 const navItems = [
   {
@@ -56,6 +52,10 @@ const navItems = [
 
 export function DashboardNav() {
   const pathname = usePathname();
+  const router = useRouter()
+  const LogoutMax = () => {
+    signOut({ callbackUrl: '/' });  // Redireciona para a página inicial após o logout
+  };
 
   return (
     <div className="flex h-screen w-64 flex-col bg-card">
@@ -86,10 +86,12 @@ export function DashboardNav() {
       </nav>
       <div className="p-4">
         <Button
+        onClick={LogoutMax}
           variant="outline"
           className="w-full justify-start relative -top-44 space-x-2"
-          onClick={() => dnzxLogout()}
+
         >
+          
           <LogOut className="h-5 w-5 " />
           <span>Sair</span>
         </Button>
