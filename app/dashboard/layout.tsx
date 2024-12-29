@@ -12,7 +12,7 @@ export default function DashboardLayout({
       <NavHeader />
 
       <div className="flex flex-1">
-        <div className="w-64 bg-gray-800 p-4">
+        <div>
           <DashboardNav />
         </div>
         <main className="flex-1 p-8 bg-muted/10">
