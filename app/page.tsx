@@ -106,19 +106,27 @@ export default function Home() {
             >
               Entre agora e faça parte da nossa comunidade incrível!
             </motion.p>
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="flex space-x-4"
-            >
-              <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
-                Começar a Jogar
-              </Button>
-              <Button size="lg" variant="outline">
-                Saber Mais
-              </Button>
-            </motion.div>
+<motion.div 
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.4 }}
+  className="flex space-x-4"
+>
+  <Button 
+    size="lg" 
+    className="bg-yellow-500 hover:bg-yellow-600 text-black"
+    onClick={() => router.push('https://discord.gg/newvalleyrp')}
+  >
+    Começar a Jogar
+  </Button>
+  <Button 
+    size="lg" 
+    variant="outline"
+    onClick={() => router.push('/dashboard')}
+  >
+    Dashboard
+  </Button>
+</motion.div>
           </div>
         </div>
       </section>
