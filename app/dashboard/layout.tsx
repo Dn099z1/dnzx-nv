@@ -1,3 +1,4 @@
+'use client'
 import { DashboardNav } from '@/components/dashboard-nav';
 import { NavHeader } from '@/components/nav-header';
 import { useState } from 'react';
