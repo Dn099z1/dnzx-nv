@@ -129,7 +129,7 @@ export default function Home() {
             <div className="flex relative -top-80 -right-full">
               <Image
                 className="flex relative"
-                src="https://cdn.discordapp.com/attachments/951553615468826724/1326423653352734730/cG5n.png?ex=677f5fca&is=677e0e4a&hm=4f377315ed4a9b1f05fb9b677142d9655684c20edf75d2c456598a6877960605&"
+                src="https://host-two-ochre.vercel.app/files/franklin.png"
                 width={350}
                 height={350}
                 alt="Imagen"
