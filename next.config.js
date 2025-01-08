@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["host-two-ochre.vercel.app"],
+    domains: ["host-two-ochre.vercel.app", "cdn.discordapp.com"],
   },
   typescript: {
     ignoreBuildErrors: true, 
