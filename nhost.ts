@@ -2,7 +2,7 @@ import { NhostClient } from '@nhost/nhost-js';
 import { GraphQLClient } from 'graphql-request';
 
 export const nhost = new NhostClient({
-  subdomain: 'mhdpjrcumyqrzeakyywr',
+  subdomain: 'mhdpjrcumyqrzywr',
   region: 'sa-east-1',
 });
 
